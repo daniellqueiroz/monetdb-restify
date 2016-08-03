@@ -1,0 +1,43 @@
+{
+  "App": {
+    "Name": "{__NAME__}-dw-api"
+  },
+  "Server": {
+    "Port": 80,
+    "Name": "api.{__NAME__}.com",
+    "DefaultVersion": "1.0.0",
+    "Acceptable": [ "application/json" ],
+    "ThrottleRate": 50,
+    "ThrottleBurst": 100
+  },
+  "Logging": {
+    "Name": "AuditLogging",
+    "Dir": "./logs/",
+    "Loggly": {
+      "Enabled": false,
+      "Tags": [ "api-{__NAME__}-com" ],
+      "Endpoint": "https://{__NAME__}.loggly.com/inputs/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/"
+    }
+  },
+  "CORS": {
+    "Credentials": false,
+    "Origins": [],
+    "Headers": []
+  },
+  "Security": {
+    "UseAuth": true,
+    "UseACL": true,
+    "Users": [
+      {
+        "name": "user",
+        "key": "_KEY_",
+        "secret": "_SECRET_"
+      },
+      {
+        "name": "user1",
+        "key": "_KEY_",
+        "secret": "_SECRET_"
+      }
+    ]
+  }
+}
