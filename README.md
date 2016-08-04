@@ -1,12 +1,6 @@
 # MonetDB RESTful Proxy
-[![Build Status](https://travis-ci.org/MonetDB/monetdb-rest.svg)](https://travis-ci.org/MonetDB/monetdb-rest)
-[![npm version](https://badge.fury.io/js/monetdb-rest.svg)](http://badge.fury.io/js/monetdb-rest)
-[![Dependency Status](https://david-dm.org/MonetDB/monetdb-rest.svg)](https://david-dm.org/MonetDB/monetdb-rest)
 
-A proxy for MonetDB that provides a RESTful interface and extended documents support. It currently intended for as an experiment, rather than a complete replacement of the MonetDB SQL interface and MAPI protocol. Having said that, the proxy is meant to be extensible (see below).
-
-# Installation and start
-Run `npm install [-g] monetdb-rest` to install any dependencies
+A proxy for MonetDB that provides a RESTful interface and extended documents support. 
 
 Run `npm start` to start the MonetDB RESTful Proxy. The Node.js process will start on port `8888`.
 
